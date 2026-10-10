@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import uuidv4 from 'lib/uuid.js';
+import { v4 as uuidv4 } from 'uuid';
 import Wick from './Wick';
 
 /**

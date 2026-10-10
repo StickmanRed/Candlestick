@@ -18,7 +18,7 @@
  */
 
 import hull from 'lib/hull.js';
-import paper from 'lib/paper.js';
+import paper from 'paper';
 import Wick from 'src/Wick';
 import Tickable from './Tickable';
 

@@ -17,8 +17,8 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import platform from 'lib/platform.js';
-import JSZip from 'lib/jszip.js';
+import platform from 'platform';
+import JSZip from 'jszip';
 import Wick from 'src/Wick';
 import WickFileAlpha from './WickFile.Alpha.js';
 

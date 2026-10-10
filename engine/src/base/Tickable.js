@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import esprima from 'lib/esprima.js';
+import esprima from 'esprima';
 import Wick from 'src/Wick';
 import GlobalAPI from 'src/GlobalAPI';
 import Base from './Base';

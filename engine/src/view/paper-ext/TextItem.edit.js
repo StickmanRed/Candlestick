@@ -18,7 +18,7 @@
  */
 
 import $ from 'jquery';
-import paper from 'lib/paper.js';
+import paper from 'paper';
 
 (function () {
     var editElem = $('<textarea style="resize: none;">');

@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import paper from 'lib/paper.js';
+import paper from 'paper';
 
 /* Small utility class for colors. */
 export default class Color {

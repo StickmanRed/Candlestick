@@ -17,8 +17,8 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import invert from 'lib/invert.min.js';
-import paper from 'lib/paper.js';
+import invert from 'invert-color';
+import paper from 'paper';
 
 export default class Tool {
     static get DOUBLE_CLICK_TIME () {

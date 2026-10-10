@@ -17,8 +17,8 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import TWEEN from 'lib/Tween.js';
-import lerp from 'lib/lerp.js';
+import { Easing } from '@tweenjs/tween.js';
+import lerp from 'lerp';
 import Wick from 'src/Wick';
 import Base from './Base';
 
@@ -225,34 +225,34 @@ export default class Tween extends Base {
      /* retrieve Tween.js easing functions by name */
     _getTweenFunction () {
         return {
-            'none': TWEEN.Easing.Linear.None,
-            'in': TWEEN.Easing.Quadratic.In,
-            'out': TWEEN.Easing.Quadratic.Out,
-            'in-out': TWEEN.Easing.Quadratic.InOut,
-            'in-cubic': TWEEN.Easing.Cubic.In,
-            'out-cubic': TWEEN.Easing.Cubic.Out,
-            'in-out-cubic': TWEEN.Easing.Cubic.InOut,
-            'in-quartic': TWEEN.Easing.Quartic.In,
-            'out-quartic': TWEEN.Easing.Quartic.Out,
-            'in-out-quartic': TWEEN.Easing.Quartic.InOut,
-            'in-quintic': TWEEN.Easing.Quintic.In,
-            'out-quintic': TWEEN.Easing.Quintic.Out,
-            'in-out-quintic': TWEEN.Easing.Quintic.InOut,
-            'in-sine': TWEEN.Easing.Sinusoidal.In,
-            'out-sine': TWEEN.Easing.Sinusoidal.Out,
-            'in-out-sine': TWEEN.Easing.Sinusoidal.InOut,
-            'in-exp': TWEEN.Easing.Exponential.In,
-            'out-exp': TWEEN.Easing.Exponential.Out,
-            'in-out-exp': TWEEN.Easing.Exponential.InOut,
-            'in-circle': TWEEN.Easing.Circular.In,
-            'out-circle': TWEEN.Easing.Circular.Out,
-            'in-out-circle': TWEEN.Easing.Circular.InOut,
-            'in-back': TWEEN.Easing.Back.In,
-            'out-back': TWEEN.Easing.Back.Out,
-            'in-out-back': TWEEN.Easing.Back.InOut,
-            'in-bounce': TWEEN.Easing.Bounce.In,
-            'out-bounce': TWEEN.Easing.Bounce.Out,
-            'in-out-bounce': TWEEN.Easing.Bounce.InOut,
+            'none': Easing.Linear.None,
+            'in': Easing.Quadratic.In,
+            'out': Easing.Quadratic.Out,
+            'in-out': Easing.Quadratic.InOut,
+            'in-cubic': Easing.Cubic.In,
+            'out-cubic': Easing.Cubic.Out,
+            'in-out-cubic': Easing.Cubic.InOut,
+            'in-quartic': Easing.Quartic.In,
+            'out-quartic': Easing.Quartic.Out,
+            'in-out-quartic': Easing.Quartic.InOut,
+            'in-quintic': Easing.Quintic.In,
+            'out-quintic': Easing.Quintic.Out,
+            'in-out-quintic': Easing.Quintic.InOut,
+            'in-sine': Easing.Sinusoidal.In,
+            'out-sine': Easing.Sinusoidal.Out,
+            'in-out-sine': Easing.Sinusoidal.InOut,
+            'in-exp': Easing.Exponential.In,
+            'out-exp': Easing.Exponential.Out,
+            'in-out-exp': Easing.Exponential.InOut,
+            'in-circle': Easing.Circular.In,
+            'out-circle': Easing.Circular.Out,
+            'in-out-circle': Easing.Circular.InOut,
+            'in-back': Easing.Back.In,
+            'out-back': Easing.Back.Out,
+            'in-out-back': Easing.Back.InOut,
+            'in-bounce': Easing.Bounce.In,
+            'out-bounce': Easing.Bounce.Out,
+            'in-out-bounce': Easing.Bounce.InOut,
         }[this.easingType];
     }
 }

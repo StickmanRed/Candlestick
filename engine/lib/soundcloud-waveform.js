@@ -1,6 +1,6 @@
 /* https://github.com/Idnan/soundcloud-waveform-generator */
 
-import Base64ArrayBuffer from './base64-arraybuffer';
+import { decode } from 'base64-arraybuffer';
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
@@ -53,7 +53,7 @@ var SCWF = function () {
 	        };
 	        reader.readAsArrayBuffer(file);*/
 	        var rawData = src.split(",")[1]; // cut off extra filetype/etc data
-	        var rawBuffer = Base64ArrayBuffer.decode(rawData);
+	        var rawBuffer = decode(rawData);
 	        audioContext.decodeAudioData(rawBuffer, function (buffer) {
 	            if (!buffer) {
 	                console.error("failed to decode:", "buffer null");

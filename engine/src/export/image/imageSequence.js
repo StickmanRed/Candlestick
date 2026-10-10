@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import JSZip from 'lib/jszip.js';
+import JSZip from 'jszip';
 import Wick from 'src/Wick';
 
 /**

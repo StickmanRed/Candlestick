@@ -17,9 +17,9 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import uuidv4 from 'lib/uuid.js';
+import { v4 as uuidv4 } from 'uuid';
 import reserved from 'lib/reserved-words.js';
-import isVarName from 'lib/is-var-name.js';
+import isVarName from 'is-var-name';
 import Wick from 'src/Wick';
 import GlobalAPI from 'src/GlobalAPI';
 

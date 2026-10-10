@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import localforage from 'lib/localforage.min.js';
+import localforage from 'localforage';
 
 /**
  * Global utility class for storing and retrieving large file data.

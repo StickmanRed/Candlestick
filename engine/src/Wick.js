@@ -17,32 +17,32 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import Base64ArrayBuffer from 'lib/base64-arraybuffer.js';
+import * as Base64ArrayBuffer from 'base64-arraybuffer';
 import convertRange from 'lib/convert-range.js';
 import Croquis from 'lib/croquis.js';
 import 'lib/currentTransform.js';
-import esprima from 'lib/esprima.js';
-import 'lib/floodfill.min.js';
-import { Howl } from 'lib/howler.js';
+import esprima from 'esprima';
+import 'floodfill';
+import { Howl } from 'howler';
 import hull from 'lib/hull.js';
-import invert from 'lib/invert.min.js';
-import isVarName from 'lib/is-var-name.js';
-import jQuery from 'lib/jquery-3.3.1.min.js';
-import jQueryMousewheel from 'lib/jquery.mousewheel.js';
-import 'lib/jquery.pressure.js';
-import JSZip from 'lib/jszip.js';
-import lerp from 'lib/lerp.js';
-import localforage from 'lib/localforage.min.js';
-import paper from 'lib/paper.js';
-import platform from 'lib/platform.js';
+import invert from 'invert-color';
+import isVarName from 'is-var-name';
+import jQuery from 'jquery';
+import jQueryMousewheel from 'jquery-mousewheel';
+import '../node_modules/pressure/dist/jquery.pressure.js';
+import JSZip from 'jszip';
+import lerp from 'lerp';
+import localforage from 'localforage';
+import paper from 'paper';
+import platform from 'platform';
 import potrace from 'lib/potrace.js';
-import Quadtree from 'lib/quadtree.min.js';
+import Quadtree from 'quadtree-lib';
 import reserved from 'lib/reserved-words.js';
 import 'lib/roundRect.js';
 import Timestamp from 'lib/timestamp.js';
 import SCWF from 'lib/soundcloud-waveform.js';
-import TWEEN from 'lib/Tween.js';
-import uuidv4 from 'lib/uuid.js';
+import TWEEN from '@tweenjs/tween.js';
+import { v4 as uuidv4 } from 'uuid';
 
 import Clipboard from './Clipboard';
 import WickQuadtree from './Quadtree';

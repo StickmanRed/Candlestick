@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import Base64ArrayBuffer from 'lib/base64-arraybuffer.js';
+import { decode } from 'base64-arraybuffer';
 
 export default class AudioTrack {
     /**
@@ -363,7 +363,7 @@ export default class AudioTrack {
      */
     static base64ToAudioBuffer (base64, ctx, callback) {
         let base64DataOnly = base64.split(',')[1];
-        let arraybuffer = Base64ArrayBuffer.decode(base64DataOnly);
+        let arraybuffer = decode(base64DataOnly);
 
         ctx.decodeAudioData(arraybuffer, function(audioBuffer) {
             callback(audioBuffer);

@@ -18,7 +18,7 @@
  */
 
 import SCWF from 'lib/soundcloud-waveform.js';
-import { Howl } from 'lib/howler.js';
+import { Howl } from 'howler';
 import Wick from 'src/Wick';
 import FileAsset from './FileAsset';
 

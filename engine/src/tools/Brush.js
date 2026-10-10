@@ -20,7 +20,7 @@
 import potrace from 'lib/potrace.js';
 import Croquis from 'lib/croquis.js';
 import convertRange from 'lib/convert-range.js';
-import paper from 'lib/paper.js';
+import paper from 'paper';
 import Wick from 'src/Wick';
 import Tool from './Tool';
 

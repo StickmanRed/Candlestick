@@ -25,7 +25,7 @@
     by zrispo (github.com/zrispo) (zach@wickeditor.com)
  */
 
-import paper from 'lib/paper.js';
+import paper from 'paper';
 
 (function () {
 

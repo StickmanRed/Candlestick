@@ -30,8 +30,6 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-        'jquery': path.resolve(__dirname, './lib/jquery-3.3.1.min.js'),
-
         'lib': path.resolve(__dirname, './lib'),
         'src': path.resolve(__dirname, './src'),
         'base': path.resolve(__dirname, './src/base'),

@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import Base64ArrayBuffer from 'lib/base64-arraybuffer.js';
+import { decode } from 'base64-arraybuffer';
 import Wick from 'src/Wick';
 import FileAsset from './FileAsset';
 
@@ -72,7 +72,7 @@ export default class FontAsset extends FileAsset {
      * @param {function} callback - function to call when the font is done being loaded.
      */
     load (callback) {
-        var fontDataArraybuffer = Base64ArrayBuffer.decode(this.src.split(',')[1]);
+        var fontDataArraybuffer = decode(this.src.split(',')[1]);
         var fontFamily = this.fontFamily;
         if (!fontFamily) {
             console.error('FontAsset: Could not get fontFamily from filename.');

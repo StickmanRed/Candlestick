@@ -17,7 +17,7 @@
  * along with Wick Engine.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import paper from 'lib/paper.js';
+import paper from 'paper';
 
 export default class View {
     /**

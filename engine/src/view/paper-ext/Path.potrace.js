@@ -26,7 +26,7 @@
  */
 
 import potrace from 'lib/potrace.js';
-import paper from 'lib/paper.js';
+import paper from 'paper';
 import Wick from 'src/Wick';
 
 paper.Path.inject({
