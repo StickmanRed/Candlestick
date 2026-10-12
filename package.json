@@ -3,10 +3,10 @@
   "version": "1.3.0",
   "author": "Candlestickers",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://stickmanred.github.io/Candlestick",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Candlestickers/Candlestick"
+    "url": "https://github.com/StickmanRed/Candlestick"
   },
   "dependencies": {
     "@ffmpeg/core": "0.12.9",
